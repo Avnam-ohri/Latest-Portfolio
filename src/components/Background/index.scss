@@ -1,0 +1,118 @@
+ 
+html{
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+.layer2{
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 1/0.5;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: url('./blob-scene-haikei.svg');
+
+}
+
+.container{
+    width: 100%;
+    left: 12rem;
+    will-change: contents;
+    z-index: 1;
+    height: 100%;
+    position: fixed;
+    opacity: 0;
+    top: 5%;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+}
+
+
+
+.container.about-page,
+.container.contact-page,
+.container.projects-page {
+
+        h1{
+            font-size: 3rem;
+            color: red;
+            font-weight: 700;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+        }
+        p{
+            color: white;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            font-weight: 300;
+            min-width: fit-content;
+            animation: pulse 1s;
+
+
+            &:nth-of-type(1) {
+                animation-delay: 1.1s;
+            }
+            &:nth-of-type(2) {
+                animation-delay: 1.2s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 1.3s;
+            }
+
+        }
+        .text-zone{
+            position: absolute;
+            left: 2.5%;
+            top: 38%;
+            transform: translateY(-50%);
+            width: 40%;
+            vertical-align: middle;
+            display: table-cell;
+            max-height: 70%;
+        .text-animate-hover{
+            &:hover{
+                color: white
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:900px)  { 
+    .layer2{
+    //   background-image: url('./blob-scene-haikei\ \(2\).svg');
+      aspect-ratio: 9/16;
+      height: 100vh;
+    }
+
+
+    .container{
+        // border: 2px solid red; for debugging puposes.
+        width: 100%;
+        left: 1rem;
+        font-size: 2rem;
+        will-change: contents;
+        z-index: 1;
+        height: 80%;
+        position: fixed;
+        opacity: 0;
+        top: 4%;
+        transform-style: preserve-3d;
+        animation: fadeIn 1s forwards;
+    
+    }
+}

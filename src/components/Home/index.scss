@@ -1,0 +1,54 @@
+.home-page {
+
+    .text-zone{
+        position: absolute;
+        left: 4%;
+        top:30%;
+        transform: translateY(-50%);
+        width: 80vw;
+        max-height: 100%;
+        // border: 2px solid red;
+    }
+
+
+
+    h1{
+        color: aliceblue;
+        font-size: 4rem;
+        font-family: 'futura Now';
+        letter-spacing: 2px;
+        img{
+            top:50%;
+            width: 3rem;
+            opacity: 0;
+            animation: rotateIn 1s linear both;
+            animation-delay:1.4;
+            
+        }
+    }
+    h2{
+        color:#8d8d8d;
+        font-weight: 400;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+    .flat-button{
+        color: red;
+        font-size: 1rem;
+        text-decoration: none;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        border: 1px solid red;
+        padding: 10px 18px;
+        font-weight: 400;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+
+        &:hover{
+            background: red;
+            color: white;
+        }
+    }
+}

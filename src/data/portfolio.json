@@ -1,0 +1,22 @@
+{
+    "portfolio":[
+        {
+            "cover": "/portfolio/1/two.png",
+            "title": "Cryptomania",
+            "description": "React, Ant Design, Chart.j, Cryptonews",
+            "url" : "https://cryptomaniaavnam.netlify.app/"
+        },
+        {
+            "cover": "/portfolio/1/one.png",
+            "title": "Particle Blast",
+            "description": "HTML canvas, Bubble Blast, Color Variation",
+            "url" : "https://particleblast.netlify.app/"
+        },
+        {
+            "cover": "/portfolio/1/three.png",
+            "title": "Chimera Automation",
+            "description": "Chimera, PDB files, WebGL, Automation",
+            "url" : "https://github.com/Avnam-ohri/Python-project-Scripts/tree/main/Chimera_script"
+        }
+    ]
+}

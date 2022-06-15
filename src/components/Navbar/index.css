@@ -1,0 +1,152 @@
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary:#b6b6b6;
+    --text-secondary:#ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+}
+
+.nav-bar{
+    z-index: 2;
+    position: fixed;
+    background-color: var(--bg-primary);
+    height: 100vh;
+    transition: width 400ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item{
+    width:100%;
+}
+
+.nav-item:last-child{
+    margin-top: 0vh;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 600ms ease;
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary)
+}
+
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    
+}
+
+.nav-link svg{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+ .nav-bar:hover .link-text {
+    display:block;
+} 
+
+.h-5{
+color: orange;
+}
+
+.h-6{
+color:orange;
+}
+.h-5,
+.h-6 {
+    transition: 600ms ease;
+}
+
+
+.connect-ul{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+.connect-a{
+padding: 15px 0;
+display: block;
+font-size: 1.5rem;
+}
+
+.connect-a:hover{
+    background: var(--bg-secondary);
+}
+
+
+/* Small screen */
+@media only screen and (max-width:600px){
+
+    .nav-bar{
+        bottom:0;
+        width:100vw;
+        height: 5rem;
+        
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-bar:hover .link-text{
+        display: none;
+    }
+
+    .connect-li{
+        display: none;
+    }
+}
+
+main{
+    margin:0;
+}
+
+
+
+
+
+/* Large Screen */
+@media only screen and (min-width:600px){
+
+    .nav-bar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .nav-bar:hover{
+        width:14rem
+    }
+
+    .nav-bar:hover .link-text{
+        display: block;
+        transition: opacity 600ms ease;
+    }
+}
+
