@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Made an updated portfolio with react
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Libaraires used
+@emailjs/browser
+ @fortawesome/free-brands-svg-icons
+ @fortawesome/free-solid-svg-icons
+@fortawesome/react-fontawesome
+animate.css
+gsap-trial
+loaders.css
+react-loaders
+ sass
 
 ## Available Scripts
 
