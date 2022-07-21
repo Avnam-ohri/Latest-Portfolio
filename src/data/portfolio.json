@@ -17,6 +17,12 @@
             "title": "Chimera Automation",
             "description": "Chimera, PDB files, WebGL, Automation",
             "url" : "https://github.com/Avnam-ohri/Python-project-Scripts/tree/main/Chimera_script"
+        },
+        {
+            "cover": "/portfolio/1/four.png",
+            "title": "Chat Application",
+            "description": "Basic clone of Microsoft Teams built using React and Stream-Chat",
+            "url" : "https://chittychattyavnam.netlify.app/"
         }
     ]
 }
